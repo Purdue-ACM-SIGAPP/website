@@ -8,6 +8,7 @@
     "build": "webpack --display-error-details",
     "start": "webpack-dev-server --inline --hot --content-base dist/"
   },
+  "repository": "git@github.com:purdue-acm-sigapp/website",
   "author": "Jordan Pitlor <jordan@jordanpitlor.com>",
   "license": "ISC",
   "devDependencies": {
