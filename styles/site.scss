@@ -12,7 +12,11 @@
   height: 100%;
 }
 
-@import 'Myriad_Pro.ttf'
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url("../font/Myriad Pro Regular.ttf");
+}
+
 * {
   font-family: 'Myriad Pro Regular', sans-serif;
 }

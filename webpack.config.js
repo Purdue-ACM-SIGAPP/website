@@ -1,5 +1,5 @@
 module.exports = {
-    entry: ['./index', 'webpack-dev-server/client?https://0.0.0.0:8080'],
+    entry: './index',
 
     output: {
         filename: 'bundle.js',
@@ -13,12 +13,12 @@ module.exports = {
         loaders: [
             {test: /\.jsx?/, loader: 'babel-loader'},
             {test: /\.s?css/, loader: 'style-loader!css-loader!sass-loader'},
-            {test: /\.(png|jpg|gif)/, loader: 'file?name=font/[name].[ext]'},
-            {test: /\.ttf/, loader: 'file?name=img/[name].[ext]'}
+            {test: /\.(png|jpe?g|gif)/, loader: 'file?name=img/[name].[ext]'}, //?name=font/[name].[ext]
+            {test: /\.ttf/, loader: 'file?name=font/[name].[ext]'}
         ],
 
         resolve: {
-            extensions: ['.js', '.jsx', '.css', '.scss']
+            extensions: ['.js', '.jsx', '.css', '.scss', '.ttf', '.png' ,'.jpg', '.jpeg', '.gif']
         }
     },
 };
