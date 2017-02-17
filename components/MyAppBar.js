@@ -8,6 +8,7 @@ import Divider from 'material-ui/Divider';
 export default class MyAppBar extends React.Component {
     constructor(props) {
         super(props);
+        this.switchOpen = this.switchOpen.bind(this);
         this.state = {
             open: false
         };
@@ -23,8 +24,8 @@ export default class MyAppBar extends React.Component {
         return (
             <div>
                 <AppBar title = "ACM SigApp"
-                        onLeftIconButtonTouchTap = {this.switchOpen} />  
-                <Drawer open={this.state.open} docked={false} onRequestChange={this.switchOpen}>
+                        onLeftIconButtonTouchTap = {this.switchOpen} />
+                <Drawer open={this.state.open} docked={false} useLayerForClickAway={true} onRequestChange={this.switchOpen}>
                     <Subheader>Talk To Us</Subheader>
                     <MenuItem>Slack</MenuItem>
                     <MenuItem>Facebook</MenuItem>

@@ -1,8 +1,8 @@
 module.exports = {
-    entry: './index',
+    entry: './index.html',
 
     output: {
-        filename: 'bundle.js',
+        filename: 'index.html',
         path: './dist/',
         publicPath: './dist/'
     },
