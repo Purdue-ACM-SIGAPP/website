@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "UV_THREADPOOL_SIZE=100 webpack --display-error-details",
+    "build": "env UV_THREADPOOL_SIZE=8 webpack --display-error-details",
     "start": "webpack-dev-server --inline --hot --content-base dist/"
   },
   "repository": "git@github.com:purdue-acm-sigapp/website",
@@ -19,6 +19,7 @@
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.26.1",
     "file-loader": "^0.10.0",
+    "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.3.0",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
@@ -26,6 +27,10 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-react": "^6.23.0",
     "material-ui": "^0.16.7",
     "normalize.css": "^5.0.0",
     "react": "^15.4.2",

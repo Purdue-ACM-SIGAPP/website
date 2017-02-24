@@ -7,4 +7,5 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
-ReactDOM.render(<App />, document.getElementById('site'));
+document.body.appendChild(document.createElement('div'));
+ReactDOM.render(<App />, document.getElementsByTagName('div')[0]);

@@ -13,7 +13,7 @@ export default () => (
     <div className="my-tab">
         <Card>
             <CardMedia>
-                <img src="http://sigapp.cs.purdue.edu/static/media/laundryicon.86fe0c06.png" />
+                <img src={require("../img/laundry.png")} />
             </CardMedia>
             <CardTitle title="Purdue Laundry" subtitle="For doing laundry the right way" />
             <CardText>

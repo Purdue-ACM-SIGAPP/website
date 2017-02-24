@@ -27,12 +27,12 @@ export default class MyAppBar extends React.Component {
                         onLeftIconButtonTouchTap = {this.switchOpen} />
                 <Drawer open={this.state.open} docked={false} useLayerForClickAway={true} onRequestChange={this.switchOpen}>
                     <Subheader>Talk To Us</Subheader>
-                    <MenuItem>Slack</MenuItem>
-                    <MenuItem>Facebook</MenuItem>
+                    <MenuItem href="https://purdueacmsigapp.slack.com/">Slack</MenuItem>
+                    <MenuItem href="https://facebook.com/groups/PurdueACMSigApp">Facebook</MenuItem>
                     <Divider />
                     <Subheader>Code With Us</Subheader>
-                    <MenuItem>Google Drive</MenuItem>
-                    <MenuItem>GitHub</MenuItem>
+                    <MenuItem href="https://drive.google.com/drive/folders/0ByBsXZAwFI0qSzY4NGFWeUZqeEU">Google Drive</MenuItem>
+                    <MenuItem href="https://github.com/purdue-acm-sigapp">GitHub</MenuItem>
                 </Drawer>
             </div>
         );

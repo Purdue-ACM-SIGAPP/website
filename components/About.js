@@ -8,7 +8,7 @@ export default () => (
     <div className="my-tab">
         <Paper className="paper">
             <h2>Welcome to ACM SigApp!</h2>
-            <img src="img/acm_logo.gif" />
+            <img src={require("../img/acm_logo.gif")} />
             <p>We're a Special Interest Group (the Sig in SigApp) within ACM, 
                 focused on Applied Computing (the App in SigApp). While this has
                 historically meant Android Apps due to the experience of our members,
@@ -19,7 +19,7 @@ export default () => (
         </Paper>
         <Paper className="paper">
             <h2>Want To Learn More?</h2>
-            <img src="img/sigapp_logo.png" />
+            <img src={require("../img/sigapp_logo.png")} />
             <p>We'd love to help! Our meetings are in LWSN B148 from 7pm to 8pm
                 every Tuesday and Thursday.</p>
             <p>In the beginning of the fall semester, 
