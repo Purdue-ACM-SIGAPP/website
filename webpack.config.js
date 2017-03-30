@@ -1,7 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 console.log(process.env.UV_THREADPOOL_SIZE);
 module.exports = {
-    entry: './index.js',
+    entry: './render.js',
 
     output: {
         filename: 'index.js',
@@ -22,8 +22,5 @@ module.exports = {
         resolve: {
             extensions: ['.js', '.jsx', '.css', '.scss', '.ttf', '.png' ,'.jpg', '.jpeg', '.gif']
         }
-    },
-    plugins: [new HtmlWebpackPlugin({
-        title: 'ACM SigApp'
-    })]
+    }
 };

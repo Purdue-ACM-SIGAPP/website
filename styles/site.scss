@@ -1,22 +1,26 @@
 .my-tab {
-  max-width: 50vw;
-  left: 25vw;
-  position: relative;
+	max-width: 50vw;
+	left: 25vw;
+	position: relative;
 }
 
 .app {
-  background-color: #eeeeee;
+	background-color: #eeeeee;
 }
 
 .tab {
-  height: 100%;
+	height: 100%;
 }
 
 @font-face {
-  font-family: 'Myriad Pro Regular';
-  src: url("../font/Myriad Pro Regular.ttf");
+	font-family: 'Myriad Pro Regular';
+	src: url("../font/Myriad Pro Regular.ttf");
 }
 
 * {
-  font-family: 'Myriad Pro Regular', sans-serif;
+	font-family: 'Myriad Pro Regular', sans-serif;
+}
+
+.tab-body {
+	height: calc(100vh - 112px);
 }

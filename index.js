@@ -1,4 +1,4 @@
-import App from './components';
+import App from './render';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';

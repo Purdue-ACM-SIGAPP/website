@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "env UV_THREADPOOL_SIZE=8 webpack --display-error-details",
+    "build": "webpack --display-error-details",
     "start": "webpack-dev-server --inline --hot --content-base dist/"
   },
   "repository": "git@github.com:purdue-acm-sigapp/website",
