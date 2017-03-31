@@ -1,8 +1,8 @@
-import React from 'react';
-import Paper from 'material-ui/Paper';
-import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
-import {calendar} from '../year-info';
-import '../styles/about.scss';
+import React from "react";
+import Paper from "material-ui/Paper";
+import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from "material-ui/Table";
+import {calendar} from "../year-info";
+import "../styles/about.scss";
 
 export default () => (
 	<div className="my-tab">

@@ -1,14 +1,7 @@
-import React from 'react';
-import {
-	Card,
-	CardActions,
-	CardMedia,
-	CardTitle,
-	CardText
-}
-	from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import '../styles/apps.scss';
+import React from "react";
+import {Card, CardActions, CardMedia, CardText, CardTitle} from "material-ui/Card";
+import FlatButton from "material-ui/FlatButton";
+import "../styles/apps.scss";
 
 export default () => (
 	<div className="my-tab">

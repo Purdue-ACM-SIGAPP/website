@@ -1,15 +1,15 @@
-import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import theme from './acm-theme';
-import {Tabs, Tab} from 'material-ui/Tabs';
-import MyAppBar from './components/MyAppBar'
-import About from './components/About';
-import Apps from './components/Apps';
-import ContactUs from './components/Contact';
+import React from "react";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import getMuiTheme from "material-ui/styles/getMuiTheme";
+import theme from "./acm-theme";
+import {Tab, Tabs} from "material-ui/Tabs";
+import MyAppBar from "./components/MyAppBar";
+import About from "./components/About";
+import Apps from "./components/Apps";
+import ContactUs from "./components/Contact";
 
-import 'normalize.css'
-import './styles/site.scss';
+import "normalize.css";
+import "./styles/site.scss";
 
 export default () => (
     <MuiThemeProvider muiTheme={getMuiTheme(theme)}>
