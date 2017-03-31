@@ -26,10 +26,8 @@ export default () => {
 	let officerList = [];
 	Object.keys(officers).forEach(k => {
 		let officer = officers[k];
-		console.log(officer);
 		if (officer.constructor === Array) {
 			officer.forEach(officerInner => {
-				console.log(officerInner);
 				officerList.push(<GridTile
 					key={officerInner.picture}
 					title={officerInner.name}

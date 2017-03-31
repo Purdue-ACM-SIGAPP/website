@@ -78,7 +78,7 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+		value: true
 	});
 
 	var _react = __webpack_require__(2);
@@ -122,34 +122,34 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = function () {
-	    return _react2.default.createElement(
-	        _MuiThemeProvider2.default,
-	        { muiTheme: (0, _getMuiTheme2.default)(_acmTheme2.default) },
-	        _react2.default.createElement(
-	            "div",
-	            { className: "app" },
-	            _react2.default.createElement(_MyAppBar2.default, null),
-	            _react2.default.createElement(
-	                _Tabs.Tabs,
-	                null,
-	                _react2.default.createElement(
-	                    _Tabs.Tab,
-	                    { label: "About Us", className: "tab", id: 1 },
-	                    _react2.default.createElement(_About2.default, { className: "tab-body" })
-	                ),
-	                _react2.default.createElement(
-	                    _Tabs.Tab,
-	                    { label: "Our Apps", className: "tab", id: 2 },
-	                    _react2.default.createElement(_Apps2.default, { className: "tab-body" })
-	                ),
-	                _react2.default.createElement(
-	                    _Tabs.Tab,
-	                    { label: "Contact Us", className: "tab", id: 3 },
-	                    _react2.default.createElement(_Contact2.default, { className: "tab-body" })
-	                )
-	            )
-	        )
-	    );
+		return _react2.default.createElement(
+			_MuiThemeProvider2.default,
+			{muiTheme: (0, _getMuiTheme2.default)(_acmTheme2.default)},
+			_react2.default.createElement(
+				"div",
+				{className: "app"},
+				_react2.default.createElement(_MyAppBar2.default, null),
+				_react2.default.createElement(
+					_Tabs.Tabs,
+					null,
+					_react2.default.createElement(
+						_Tabs.Tab,
+						{label: "About Us", className: "tab", id: 1},
+						_react2.default.createElement(_About2.default, {className: "tab-body"})
+					),
+					_react2.default.createElement(
+						_Tabs.Tab,
+						{label: "Our Apps", className: "tab", id: 2},
+						_react2.default.createElement(_Apps2.default, {className: "tab-body"})
+					),
+					_react2.default.createElement(
+						_Tabs.Tab,
+						{label: "Contact Us", className: "tab", id: 3},
+						_react2.default.createElement(_Contact2.default, {className: "tab-body"})
+					)
+				)
+			)
+		);
 	};
 
 /***/ },
@@ -39377,7 +39377,7 @@
 	exports.default = function () {
 		return _react2.default.createElement(
 			"div",
-			{ className: "my-tab" },
+			{className: "my-tab " + props.className},
 			_react2.default.createElement(
 				_Paper2.default,
 				{ className: "paper" },
@@ -42315,14 +42315,14 @@
 		officers: {
 			president: {
 				name: "David Tschida",
-				picture: "../img/David Tschida.jpg"
+				picture: "../../img/David Tschida.jpg"
 			},
 			vicePresident: [{
 				name: "Jeff Hughes",
-				picture: "../img/Jeff Hughes.png"
+				picture: "../../img/Jeff Hughes.png"
 			}, {
 				name: "Michael Vieck",
-				picture: "../img/Michael Vieck.jpg"
+				picture: "../../img/Michael Vieck.jpg"
 			}]
 		},
 		calendar: [{
@@ -42419,7 +42419,7 @@
 	exports.default = function () {
 		return _react2.default.createElement(
 			"div",
-			{ className: "my-tab" },
+			{className: "my-tab " + props.className},
 			_react2.default.createElement(
 				_Card.Card,
 				{ className: "app-card" },
@@ -44366,10 +44366,8 @@
 		var officerList = [];
 		Object.keys(_yearInfo.officers).forEach(function (k) {
 			var officer = _yearInfo.officers[k];
-			console.log(officer);
 			if (officer.constructor === Array) {
 				officer.forEach(function (officerInner) {
-					console.log(officerInner);
 					officerList.push(_react2.default.createElement(
 						_GridList.GridTile,
 						{
@@ -44392,7 +44390,7 @@
 		});
 		return _react2.default.createElement(
 			"div",
-			{ className: "my-tab" },
+			{className: "my-tab " + props.className},
 			_react2.default.createElement(
 				_Paper2.default,
 				{ className: "paper" },
@@ -45300,7 +45298,7 @@
 
 
 	// module
-	exports.push([module.id, ".paper {\n  padding: 1em 2em;\n  margin: 2em;\n  display: flex;\n  flex-direction: column; }\n  .paper img, .paper h2 {\n    align-self: center; }\n\n.app-card {\n  max-height: 50vh; }\n\n.my-tab {\n  max-width: 50vw;\n  left: 25vw;\n  position: relative; }\n\n.app {\n  background-color: #eeeeee; }\n\n.tab {\n  height: 100%; }\n\n@font-face {\n  font-family: 'Myriad Pro Regular';\n  src: url(" + __webpack_require__(462) + "); }\n\n* {\n  font-family: 'Myriad Pro Regular', sans-serif; }\n\n.tab-body {\n  height: calc(100vh - 112px); }\n", ""]);
+		exports.push([module.id, ".paper {\n  padding: 1em 2em;\n  margin: 2em;\n  display: flex;\n  flex-direction: column; }\n  .paper img, .paper h2 {\n    align-self: center; }\n\n@media (max-width: 1000px) {\n  .paper {\n    width: 75vw;\n    margin-left: -12.5vw; } }\n\n@media (max-width: 600px) {\n  .paper {\n    width: 95vw;\n    margin-left: -22.5vw; } }\n\n.app-card {\n  max-width: 25vw; }\n\n.my-tab {\n  max-width: 50vw;\n  left: 25vw;\n  position: relative;\n  min-height: calc(100vh - 112px); }\n\n.app {\n  background-color: #eeeeee; }\n\n.tab {\n  height: 100%; }\n\n@font-face {\n  font-family: 'Myriad Pro Regular';\n  src: url(" + __webpack_require__(462) + "); }\n\n* {\n  font-family: 'Myriad Pro Regular', sans-serif; }\n\n.tab-body {\n  min-height: calc(100vh - 112px);\n  margin-top: -4vh;\n  padding-top: 4vh; }\n", ""]);
 
 	// exports
 

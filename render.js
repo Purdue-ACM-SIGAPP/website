@@ -12,14 +12,14 @@ import "normalize.css";
 import "./styles/index.scss";
 
 export default () => (
-    <MuiThemeProvider muiTheme={getMuiTheme(theme)}>
-        <div className="app">
-            <MyAppBar />
-            <Tabs>
-                <Tab label="About Us" className="tab" id={1}><About className="tab-body"/></Tab>
-                <Tab label="Our Apps" className="tab" id={2}><Apps className="tab-body"/></Tab>
-                <Tab label="Contact Us" className="tab" id={3}><ContactUs className="tab-body"/></Tab>
-            </Tabs>
-        </div>
-    </MuiThemeProvider>
+	<MuiThemeProvider muiTheme={getMuiTheme(theme)}>
+		<div className="app">
+			<MyAppBar />
+			<Tabs>
+				<Tab label="About Us" className="tab" id={1}><About/></Tab>
+				<Tab label="Our Apps" className="tab" id={2}><Apps /></Tab>
+				<Tab label="Contact Us" className="tab" id={3}><ContactUs /></Tab>
+			</Tabs>
+		</div>
+	</MuiThemeProvider>
 );

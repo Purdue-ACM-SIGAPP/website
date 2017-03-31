@@ -8,3 +8,17 @@
 		align-self: center;
 	}
 }
+
+@media (max-width: 1000px) {
+	.paper {
+		width: 75vw;
+		margin-left: -12.5vw;
+	}
+}
+
+@media (max-width: 600px) {
+	.paper {
+		width: 95vw;
+		margin-left: -22.5vw;
+	}
+}
