@@ -45,7 +45,7 @@ export default () => {
 		}
 	});
 	return (
-		<div className="my-tab">
+		<div className="my-tab contact">
 			<Paper className="paper">
 				<h2>Officers</h2>
 				<GridList style={styles} cols={2.2}>{officerList}</GridList>
