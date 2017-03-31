@@ -3,6 +3,15 @@ This is the website for ACM SigApp at Purdue University.
 
 It is available to view at [https://sigapp.club]().
 
+# Building
+To see the website, you must first build it. Run:
+
+    $ npm install
+    $ npm start
+    
+This will run webpack and start the webpack dev server. The website is now viewable at `localhost:8080` and the
+static files are available in the folder `dist/`.
+
 # Updating the Schedule
 Each semester, an officer should create a file under the folder `year-info`.
 The file naming is currently [s|f][year].js, where s is spring, f is fall, 
