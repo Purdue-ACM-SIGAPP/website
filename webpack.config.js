@@ -3,8 +3,7 @@ module.exports = {
 
 	output: {
 		filename: 'index.js',
-		path: __dirname + 'dist/',
-		publicPath: __dirname + 'dist/'
+		path: __dirname + 'dist/'
 	},
 
 	module: {
@@ -18,5 +17,9 @@ module.exports = {
 
 	resolve: {
 		extensions: ['.js', '.jsx', '.css', '.scss', '.ttf', '.png', '.jpg', '.jpeg', '.gif']
+	},
+
+	devServer: {
+		inline: true
 	}
 };

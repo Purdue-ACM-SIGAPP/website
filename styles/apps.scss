@@ -1,3 +1,22 @@
-.app-card {
-	max-width: 25vw;
+.apps {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+
+	.app-card {
+		width: 25vw;
+	}
+
+	@media (max-width: 1000px) {
+		.app-card {
+			width: 35vw;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.app-card {
+			width: 50vw;
+		}
+	}
 }

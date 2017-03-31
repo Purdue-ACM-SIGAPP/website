@@ -3,12 +3,12 @@ import {Card, CardActions, CardMedia, CardText, CardTitle} from "material-ui/Car
 import FlatButton from "material-ui/FlatButton";
 
 export default () => (
-	<div className="my-tab">
+	<div className="my-tab apps">
 		<Card className="app-card">
 			<CardMedia>
 				<img src={require("../img/laundry.png")}/>
 			</CardMedia>
-			<CardTitle title="Purdue Laundry" subtitle="For doing laundry the right way"/>
+			<CardTitle title="Purdue Laundry"/>
 			<CardText>
 				The Purdue Laundry app shows the details of your dorm's laundry
 				room in the palm of your hand! You can even set timers for each

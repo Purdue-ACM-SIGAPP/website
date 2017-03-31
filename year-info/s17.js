@@ -2,16 +2,16 @@ module.exports = {
 	officers: {
 		president: {
 			name: "David Tschida",
-			picture: "../../img/David Tschida.jpg"
+			picture: "/img/David Tschida.jpg"
 		},
 		vicePresident: [
 			{
 				name: "Jeff Hughes",
-				picture: "../../img/Jeff Hughes.png"
+				picture: "/img/Jeff Hughes.png"
 			},
 			{
 				name: "Michael Vieck",
-				picture: "../../img/Michael Vieck.jpg"
+				picture: "/img/Michael Vieck.jpg"
 			}
 		]
 	},
