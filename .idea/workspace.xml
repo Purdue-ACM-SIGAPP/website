@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="beb3776d-c3a0-422b-a012-abe611a38908" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Contact.js" afterPath="$PROJECT_DIR$/components/Contact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.js" afterPath="$PROJECT_DIR$/dist/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/render.js" afterPath="$PROJECT_DIR$/render.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/about.scss" afterPath="$PROJECT_DIR$/styles/about.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/apps.scss" afterPath="$PROJECT_DIR$/styles/apps.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/site.scss" afterPath="$PROJECT_DIR$/styles/site.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/year-info/s17.js" afterPath="$PROJECT_DIR$/year-info/s17.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,14 +21,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="render.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="render.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/render.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
               <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,9 +36,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/site.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1080">
@@ -428,7 +418,7 @@
       <workItem from="1487291004490" duration="3679000" />
       <workItem from="1487738883901" duration="20000" />
       <workItem from="1490749531376" duration="1457000" />
-      <workItem from="1490911463080" duration="15427000" />
+      <workItem from="1490911463080" duration="15468000" />
     </task>
     <task id="LOCAL-00001" summary="finished about, making progress on other tabs, restructured">
       <created>1490917583969</created>
@@ -479,11 +469,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490925708310</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="styling changes">
+      <created>1490928506164</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490928506164</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32938000" />
+    <option name="totallyTimeSpent" value="32979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="3200" height="1800" extended-state="6" />
@@ -541,7 +538,11 @@
     <MESSAGE value="change the gitignore again" />
     <MESSAGE value="pulled the scss importing to render.js" />
     <MESSAGE value="added new pictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new pictures" />
+    <MESSAGE value="styling changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling changes" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -725,11 +726,11 @@
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1490928337884" expanded="true" signature="1325:1532519" ph="[...]" />
-            <marker date="1490928337884" expanded="true" signature="1388:1392" ph="{...}" />
-            <marker date="1490928337884" expanded="true" signature="1532498:1532508" ph="{...}" />
-            <marker date="1490928337884" expanded="true" signature="1532501:1532506" ph="/*...*/" />
-            <marker date="1490928337884" expanded="true" signature="1532509:1532517" ph="/*...*/" />
+            <marker date="1490928505909" expanded="true" signature="1325:1532498" ph="[...]" />
+            <marker date="1490928505909" expanded="true" signature="1388:1392" ph="{...}" />
+            <marker date="1490928505909" expanded="true" signature="1532477:1532487" ph="{...}" />
+            <marker date="1490928505909" expanded="true" signature="1532480:1532485" ph="/*...*/" />
+            <marker date="1490928505909" expanded="true" signature="1532488:1532496" ph="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -862,9 +863,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -908,21 +907,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/render.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/styles/site.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/render.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
