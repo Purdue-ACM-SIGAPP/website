@@ -3,22 +3,20 @@ module.exports = {
 
 	output: {
 		filename: 'index.js',
-		path: 'dist/',
-		publicPath: 'dist/'
+		path: __dirname + 'dist/',
+		publicPath: __dirname + 'dist/'
 	},
 
-	watch: true,
-
 	module: {
-		loaders: [
-			{test: /\.jsx?/, loader: 'babel-loader'},
-			{test: /\.s?css/, loader: 'style-loader!css-loader!sass-loader'},
-			{test: /\.(png|jpe?g|gif)/, loader: 'file?name=img/[name].[ext]'},
-			{test: /\.ttf/, loader: 'file?name=font/[name].[ext]'}
-		],
+		rules: [
+			{test: /\.jsx?/, use: {loader: 'babel-loader'}},
+			{test: /\.s?css/, use: ['style-loader', 'css-loader', 'sass-loader']},
+			{test: /\.(png|jpe?g|gif)/, use: {loader: 'file-loader', options: {name: 'img/[name].[ext]'}}},
+			{test: /\.ttf/, use: {loader: 'file-loader', options: {name: 'font/[name].[ext]'}}}
+		]
+	},
 
-		resolve: {
-			extensions: ['.js', '.jsx', '.css', '.scss', '.ttf', '.png', '.jpg', '.jpeg', '.gif']
-		}
+	resolve: {
+		extensions: ['.js', '.jsx', '.css', '.scss', '.ttf', '.png', '.jpg', '.jpeg', '.gif']
 	}
 };
