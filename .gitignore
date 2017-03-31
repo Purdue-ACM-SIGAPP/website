@@ -3,4 +3,5 @@ dist/
 !dist/index.html
 .*
 !.gitignore
+!.babelrc
 npm-debug.log
