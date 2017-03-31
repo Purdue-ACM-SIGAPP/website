@@ -1,8 +1,7 @@
 import React from "react";
-import Paper from "material-ui/Paper";
 import {GridList, GridTile} from "material-ui/GridList";
 import {officers} from "../year-info";
-import "../styles/contact.scss";
+import Paper from "material-ui/Paper";
 
 const tilesData = [
 	{
@@ -28,33 +27,52 @@ const styles = {
 	},
 };
 
-export default () => (
-	<div className="my-tab">
-		<Paper>
-			<h2>Officers</h2>
-			<GridList style={styles.gridList} cols={2.2}>
-				{officers.map((tile) => (
-					<GridTile
-						key={tile.picture}
-						title={tile.name}
-						titleStyle={styles.titleStyle}
-						titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)">
-						<img src={tile.picture}/>
-					</GridTile>
-				))}
-			</GridList>
-		</Paper>
-		<Paper>
-			<h2>Social Media</h2>
-			{tilesData.map((tile) => (
-				<GridTile
-					key={tile.picture}
-					title={tile.name}
+export default () => {
+	let officerList = [];
+	Object.keys(officers).forEach(k => {
+		let officer = officers[k];
+		if (typeof officer === Array) {
+			officer.forEach(l => {
+				let officerInner = officers[k][l];
+				officerList.push(<GridTile
+					key={officerInner.picture}
+					title={officerInner.name}
 					titleStyle={styles.titleStyle}
 					titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)">
-					<img src={tile.picture}/>
-				</GridTile>
-			))}
-		</Paper>
-	</div>
-);
+					<img src={officerInner.picture}/>
+				</GridTile>);
+			})
+		} else {
+			officerList.push(<GridTile
+				key={officer.picture}
+				title={officer.name}
+				titleStyle={styles.titleStyle}
+				titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)">
+				<img src={officer.picture}/>
+			</GridTile>);
+		}
+	});
+	return (
+		<div className="my-tab">
+			<h2>Officers</h2>
+			<Paper>
+				<GridList style={styles.gridList} cols={2.2}>{officerList}</GridList>
+			</Paper>
+			<br />
+			<h2>Social Media</h2>
+			<Paper>
+				<GridList>
+					{tilesData.map((tile) => (
+						<GridTile
+							key={tile.picture}
+							title={tile.name}
+							titleStyle={styles.titleStyle}
+							titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)">
+							<img src={tile.picture}/>
+						</GridTile>
+					))}
+				</GridList>
+			</Paper>
+		</div>
+	);
+}

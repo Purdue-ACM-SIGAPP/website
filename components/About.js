@@ -2,7 +2,6 @@ import React from "react";
 import Paper from "material-ui/Paper";
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from "material-ui/Table";
 import {calendar} from "../year-info";
-import "../styles/about.scss";
 
 export default () => (
 	<div className="my-tab">
@@ -40,8 +39,8 @@ export default () => (
 					<TableHeaderColumn>Link?</TableHeaderColumn>
 				</TableHeader>
 				<TableBody displayRowCheckbox={false}>
-					{calendar.map((e, i) => (
-						<TableRow id={i}>
+					{calendar.map(e => (
+						<TableRow>
 							<TableRowColumn>{e.date}</TableRowColumn>
 							<TableRowColumn>{e.name}</TableRowColumn>
 							<TableRowColumn>{e.link ? <a href={e.link}>Yes</a> : "No"}</TableRowColumn>

@@ -9,7 +9,7 @@ import Apps from "./components/Apps";
 import ContactUs from "./components/Contact";
 
 import "normalize.css";
-import "./styles/site.scss";
+import "./styles";
 
 export default () => (
     <MuiThemeProvider muiTheme={getMuiTheme(theme)}>

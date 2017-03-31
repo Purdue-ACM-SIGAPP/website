@@ -1,7 +1,5 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-console.log(process.env.UV_THREADPOOL_SIZE);
 module.exports = {
-	entry: './render.js',
+	entry: './index.js',
 
 	output: {
 		filename: 'index.js',
@@ -15,7 +13,7 @@ module.exports = {
 		loaders: [
 			{test: /\.jsx?/, loader: 'babel-loader'},
 			{test: /\.s?css/, loader: 'style-loader!css-loader!sass-loader'},
-			{test: /\.(png|jpe?g|gif)/, loader: 'file?name=img/[name].[ext]'}, //?name=font/[name].[ext]
+			{test: /\.(png|jpe?g|gif)/, loader: 'file?name=img/[name].[ext]'},
 			{test: /\.ttf/, loader: 'file?name=font/[name].[ext]'}
 		],
 
