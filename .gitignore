@@ -1,4 +1,6 @@
-node_modules
-dist/!index.html
+node_modules/
+dist/
+!dist/index.html
 .*
+!.gitignore
 npm-debug.log
