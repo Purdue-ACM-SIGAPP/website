@@ -32,11 +32,11 @@ export default () => (
 			<h2>What Are We Doing This Semester?</h2>
 			<p>Below you can find our rough schedule for the semester. Take a look
 				at all the fun stuff we're doing!</p>
-			<Table>
+			<Table style={{tableLayout: 'auto'}}>
 				<TableHeader displaySelectAll={false} adjustForCheckbox={false}>
 					<TableHeaderColumn>Date</TableHeaderColumn>
 					<TableHeaderColumn>Name</TableHeaderColumn>
-					<TableHeaderColumn>Link?</TableHeaderColumn>
+					<TableHeaderColumn style={{textAlign: 'right'}}>Link?</TableHeaderColumn>
 				</TableHeader>
 				<TableBody displayRowCheckbox={false}>
 					{calendar.map(e => (
