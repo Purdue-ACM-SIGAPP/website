@@ -17,27 +17,22 @@ const tilesData = [
 ];
 
 const styles = {
-	gridList: {
-		display: 'flex',
-		flexWrap: 'nowrap',
-		overflowX: 'auto',
-	},
-	titleStyle: {
-		color: 'rgb(0, 188, 212)',
-	},
+	display: 'flex',
+	flexWrap: 'nowrap',
+	overflowX: 'auto'
 };
 
 export default () => {
 	let officerList = [];
 	Object.keys(officers).forEach(k => {
 		let officer = officers[k];
-		if (typeof officer === Array) {
-			officer.forEach(l => {
-				let officerInner = officers[k][l];
+		console.log(officer);
+		if (officer.constructor === Array) {
+			officer.forEach(officerInner => {
+				console.log(officerInner);
 				officerList.push(<GridTile
 					key={officerInner.picture}
 					title={officerInner.name}
-					titleStyle={styles.titleStyle}
 					titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)">
 					<img src={officerInner.picture}/>
 				</GridTile>);
@@ -46,7 +41,6 @@ export default () => {
 			officerList.push(<GridTile
 				key={officer.picture}
 				title={officer.name}
-				titleStyle={styles.titleStyle}
 				titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)">
 				<img src={officer.picture}/>
 			</GridTile>);
@@ -54,19 +48,18 @@ export default () => {
 	});
 	return (
 		<div className="my-tab">
-			<h2>Officers</h2>
-			<Paper>
-				<GridList style={styles.gridList} cols={2.2}>{officerList}</GridList>
+			<Paper className="paper">
+				<h2>Officers</h2>
+				<GridList style={styles} cols={2.2}>{officerList}</GridList>
 			</Paper>
 			<br />
-			<h2>Social Media</h2>
-			<Paper>
-				<GridList>
+			<Paper className="paper">
+				<h2>Social Media</h2>
+				<GridList style={styles}>
 					{tilesData.map((tile) => (
 						<GridTile
 							key={tile.picture}
 							title={tile.name}
-							titleStyle={styles.titleStyle}
 							titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)">
 							<img src={tile.picture}/>
 						</GridTile>
