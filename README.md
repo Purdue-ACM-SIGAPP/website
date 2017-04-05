@@ -23,13 +23,13 @@ The file declares its export as an object with the following structure:
         officers: {
             president: {
                 name: "",
-                picture: "",
+                picture: require(""),
                 link: ""
             },
             vicePresidents: [
                 {
                     name: "",
-                    picture: "",
+                    picture: require(""),
                     link: ""
                 },
                 ...
@@ -61,7 +61,7 @@ This file has the following structure:
         {
             name: "",
             description: "",
-            picture: "",
+            picture: require(""),
             playStoreLink: "",
             appStoreLink: ""
         },

@@ -2,19 +2,19 @@ module.exports = {
 	officers: {
 		president: {
 			name: "David Tschida",
-			picture: require("../img/David Tschida.jpg"),
-			link: "mailto:"
+			picture: require("../img/david.jpg"),
+			link: "mailto:dt+sigapp@purdue.edu"
 		},
 		vicePresident: [
 			{
 				name: "Jeff Hughes",
-				picture: "/img/Jeff Hughes.png",
+				picture: require("../img/jeff.png"),
 				link: "mailto:"
 			},
 			{
 				name: "Michael Vieck",
-				picture: "/img/Michael Vieck.jpg",
-
+				picture: require("../img/vieck.jpg"),
+				link: "mailto:mvieck"
 			}
 		]
 	},

@@ -45,7 +45,8 @@ export default () => {
 					{/*containerElement={<Link to={officer.link}/>}*/}
 					<img src={officerInner.picture}/>
 				</GridTile>);
-			})
+				console.log(officerInner.picture);
+			});
 		} else {
 			officerList.push(<GridTile
 				key={officer.picture}
@@ -54,8 +55,10 @@ export default () => {
 				{/*containerElement={<Link to={officer.link}/>}*/}
 				<img src={officer.picture}/>
 			</GridTile>);
+			console.log(officer.picture);
 		}
 	});
+
 	return (
 		<div className="my-tab contact">
 			{/*<Router history={{}}>*/}
