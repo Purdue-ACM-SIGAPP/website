@@ -50,6 +50,9 @@ The file declares its export as an object with the following structure:
 If a meeting does not have a link, do not include a link property, 
 and the page will gracefully reflect this.
 
+Each officer should upload a picture of themselves to `img/people/file.ext`.
+The name of the file should be the same was what is `require`'d in this file.
+
 Additionally, `year-info/index.js` should be updated to export the 
 current semester.
 
@@ -71,3 +74,6 @@ This file has the following structure:
 Similarly to the schedule, if an app is not released on either the Play Store
 or the App Store, do not include the respective property, and the page will
 not display the button.
+
+The app's picture should be added to `img/apps/file.ext`, and the name of
+the file should be the same as what was `require`'d in this file.

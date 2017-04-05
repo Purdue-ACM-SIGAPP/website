@@ -6,7 +6,7 @@ module.exports = [
 		"can even set timers for each machine " +
 		"you are using to be alerted when they " +
 		"are done.",
-		picture: require("./img/laundry.png"),
+		picture: require("./img/apps/laundry.png"),
 		playStoreLink: "https://play.google.com/store/apps/details?id=xyz.jhughes.laundry"
 	}
 ];

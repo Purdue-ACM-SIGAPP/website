@@ -6,22 +6,22 @@ import Paper from "material-ui/Paper";
 const tilesData = [
 	{
 		name: "Facebook",
-		picture: "https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-fLogo-Blue-broadcast-2.png",
+		picture: require("../img/social-media-logos/facebook.png"),
 		link: "https://www.facebook.com/groups/PurdueACMSigApp/"
 	},
 	{
 		name: "Slack",
-		picture: "https://assets.brandfolder.com/ubhnmsn4/original/Slack_Mark_Web.png",
+		picture: require("../img/social-media-logos/slack.png"),
 		link: "https://purdueacmsigapp.slack.com"
 	},
 	{
 		name: "GitHub",
-		picture: "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png",
+		picture: require("../img/social-media-logos/github.png"),
 		link: "https://github.com/purdue-acm-sigapp"
 	},
 	{
 		name: "Google Drive",
-		picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_of_Google_Drive.svg/2000px-Logo_of_Google_Drive.svg.png",
+		picture: require("../img/social-media-logos/gdrive.png"),
 		link: "https://drive.google.com/drive/folders/0ByBsXZAwFI0qSzY4NGFWeUZqeEU?usp=sharing"
 	},
 ];

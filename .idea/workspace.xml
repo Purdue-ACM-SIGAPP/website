@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb3776d-c3a0-422b-a012-abe611a38908" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/font/Myriad Pro Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/acm_logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/laundry.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/sigapp_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/David Tschida.jpg" afterPath="$PROJECT_DIR$/img/david.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/Jeff Hughes.png" afterPath="$PROJECT_DIR$/img/jeff.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/Michael Vieck.jpg" afterPath="$PROJECT_DIR$/img/vieck.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/social-media-logos/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/social-media-logos/gdrive.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/social-media-logos/github.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/social-media-logos/slack.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/google drive.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slack_rgb.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/acm.gif" afterPath="$PROJECT_DIR$/img/acm-logos/acm.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/david.jpg" afterPath="$PROJECT_DIR$/img/people/david.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/jeff.png" afterPath="$PROJECT_DIR$/img/people/jeff.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/laundry.png" afterPath="$PROJECT_DIR$/img/apps/laundry.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/sigapp.png" afterPath="$PROJECT_DIR$/img/acm-logos/sigapp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/vieck.jpg" afterPath="$PROJECT_DIR$/img/people/vieck.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps.js" afterPath="$PROJECT_DIR$/apps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/About.js" afterPath="$PROJECT_DIR$/components/About.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/Contact.js" afterPath="$PROJECT_DIR$/components/Contact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/year-info/s17.js" afterPath="$PROJECT_DIR$/year-info/s17.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/apps.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -66,8 +72,8 @@
       <file leaf-file-name="Contact.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Contact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="1035">
+              <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -89,8 +95,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="995">
-                <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+              <first_editor relative-caret-position="-23">
+                <caret line="53" column="60" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -148,10 +154,10 @@
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/render.js" />
-        <option value="$PROJECT_DIR$/components/Contact.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/year-info/s17.js" />
         <option value="$PROJECT_DIR$/apps.js" />
+        <option value="$PROJECT_DIR$/components/Contact.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -285,6 +291,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/apps" />
+      <recent name="$PROJECT_DIR$/img/people" />
+      <recent name="$PROJECT_DIR$/img/social-media-logos" />
+      <recent name="$PROJECT_DIR$/img/acm-logos" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -396,7 +406,7 @@
       <workItem from="1490911463080" duration="15610000" />
       <workItem from="1490928687412" duration="526000" />
       <workItem from="1490987781625" duration="5203000" />
-      <workItem from="1491346921972" duration="6131000" />
+      <workItem from="1491346921972" duration="6553000" />
     </task>
     <task id="LOCAL-00001" summary="finished about, making progress on other tabs, restructured">
       <created>1490917583969</created>
@@ -475,11 +485,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491352554857</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="hallelujah pictures work">
+      <created>1491353406388</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1491353406388</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44981000" />
+    <option name="totallyTimeSpent" value="45403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +585,8 @@
     <MESSAGE value="centered app card" />
     <MESSAGE value="abstracted the apps away" />
     <MESSAGE value="- google analytics&#10;- favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="- google analytics&#10;- favicon" />
+    <MESSAGE value="hallelujah pictures work" />
+    <option name="LAST_COMMIT_MESSAGE" value="hallelujah pictures work" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -742,12 +760,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/github.png">
+    <entry file="file://$PROJECT_DIR$/img/social-media-logos/github.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/facebook.png">
+    <entry file="file://$PROJECT_DIR$/img/social-media-logos/facebook.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -865,24 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/year-info/s17.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -894,16 +894,34 @@
     <entry file="file://$PROJECT_DIR$/apps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="13" column="57" lean-forward="false" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="995">
-            <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <first_editor relative-caret-position="-23">
+            <caret line="53" column="60" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
             <folding />
           </first_editor>
           <second_editor />
