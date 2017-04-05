@@ -8,4 +8,5 @@ import injectTapEventPlugin from "react-tap-event-plugin";
 injectTapEventPlugin();
 
 document.body.appendChild(document.createElement('div'));
+document.head.innerHTML += "<link rel='shortcut icon' href=" + require("./img/favicon.ico") + "/>";
 ReactDOM.render(<App />, document.getElementsByTagName('div')[0]);

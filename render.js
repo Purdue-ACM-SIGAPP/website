@@ -10,6 +10,7 @@ import ContactUs from "./components/Contact";
 
 import "normalize.css";
 import "./styles/index.scss";
+import "./google-analytics";
 
 export default () => (
 	<MuiThemeProvider muiTheme={getMuiTheme(theme)}>

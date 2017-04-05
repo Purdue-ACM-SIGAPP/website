@@ -10,7 +10,7 @@ module.exports = {
 		rules: [
 			{test: /\.jsx?/, use: {loader: 'babel-loader'}},
 			{test: /\.s?css/, use: ['style-loader', 'css-loader', 'sass-loader']},
-			{test: /\.(png|jpe?g|gif)/, use: {loader: 'file-loader', options: {name: 'img/[name].[ext]'}}},
+			{test: /\.(png|jpe?g|gif|ico)/, use: {loader: 'file-loader', options: {name: 'img/[name].[ext]'}}},
 			{test: /\.ttf/, use: {loader: 'file-loader', options: {name: 'font/[name].[ext]'}}}
 		]
 	},

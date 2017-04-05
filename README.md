@@ -23,12 +23,14 @@ The file declares its export as an object with the following structure:
         officers: {
             president: {
                 name: "",
-                picture: ""
+                picture: "",
+                link: ""
             },
             vicePresidents: [
                 {
                     name: "",
-                    picture: ""
+                    picture: "",
+                    link: ""
                 },
                 ...
             ]
