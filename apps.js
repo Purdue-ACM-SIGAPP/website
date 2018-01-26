@@ -8,5 +8,14 @@ module.exports = [
 		"are done.",
 		picture: require("./img/apps/laundry.png"),
 		playStoreLink: "https://play.google.com/store/apps/details?id=xyz.jhughes.laundry"
+	},
+	{
+		name: "Purdue CoRec Monitor",
+                description: "Purdue CoRec Monitor provides the ideal interface for checking activity" + 
+		"levels within the various facilities" + 
+		"provided by the France A. Cordova Recreational" + 
+		"Sports Center at Purdue University.",
+                picture: require("./img/apps/corec.png"),
+                playStoreLink: "https://play.google.com/store/apps/details?id=club.sigapp.purduecorecmonitor"
 	}
 ];

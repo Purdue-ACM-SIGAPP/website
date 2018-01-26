@@ -19,7 +19,7 @@ export default () => (
 		<Paper className="paper">
 			<h2>Want To Learn More?</h2>
 			<img src={require("../img/acm-logos/sigapp.png")}/>
-			<p>We'd love to help! Our meetings are in LWSN B148 from 7pm to 8pm
+			<p>We'd love to help! Our meetings are in LWSN B160 from 7pm to 8pm
 				every Tuesday and Thursday.</p>
 			<p>In the beginning of the fall semester,
 				we typically do tutorials on different technologies, then think

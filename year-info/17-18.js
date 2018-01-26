@@ -7,14 +7,14 @@ module.exports = {
 		},
 		vicePresident: [
 			{
-				name: "Michael Vieck",
-				picture: require("../img/people/vieck.jpg"),
-				link: "mailto://mvieck3@purdue.edu"
-			},
-			{
 				name: "Jordan Pitlor",
 				picture: require("../img/people/pitlor.jpg"),
 				link: "mailto://jpitlor@purdue.edu"
+			},
+			{
+				name: "Lucas Shanker",
+				picture: require("../img/people/shanker.jpg"),
+				link: "mailto://lshanke@purdue.edu"
 			}
 		]
 	},
