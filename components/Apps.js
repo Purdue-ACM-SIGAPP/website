@@ -7,7 +7,7 @@ export default () => (
 	<div className="my-tab apps">
 		{apps.map(app => (
 			<Card className="app-card">
-				<CardMedia>
+				<CardMedia className="app-media">
 					<img src={app.picture}/>
 				</CardMedia>
 				<CardTitle title={app.name}/>

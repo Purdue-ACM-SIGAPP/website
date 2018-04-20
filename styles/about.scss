@@ -1,11 +1,12 @@
 .paper {
 	padding: 1em 2em;
-	margin: 2em;
+	margin-bottom: 2em;
 	display: flex;
 	flex-direction: column;
 
 	img, h2 {
 		align-self: center;
+		max-width: 80%;
 	}
 }
 
