@@ -1,4 +1,7 @@
 export default {
+	typography: {
+		fontFamily: '"Myriad Pro Regular", sans-serif'
+	},
 	palette: {
 		primary1Color: '#0182AC',
 		primary2Color: '#83CEE2', // Light

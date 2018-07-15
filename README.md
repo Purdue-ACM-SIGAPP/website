@@ -6,8 +6,8 @@ It is available to view at [https://sigapp.club]().
 # Building
 To see the website, you must first build it. Run:
 
-    $ npm install
-    $ npm start
+    $ yarn
+    $ yarn build
     
 This will run webpack and start the webpack dev server. The website is now viewable at `localhost:8080` and the
 static files are available in the folder `dist/`.

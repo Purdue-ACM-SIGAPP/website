@@ -1,4 +1,4 @@
-module.exports = [
+export default [
 	{
 		name: "Purdue Laundry",
 		description: "The Purdue Laundry app shows the details of your dorm's laundry " +
