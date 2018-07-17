@@ -1,78 +1,117 @@
 import React from "react";
-import {Paper, Table, TableBody, TableHead, TableRow, TableCell} from "@material-ui/core";
-import {withStyles} from '@material-ui/core/styles';
+import {
+  Paper,
+  Grid,
+  Table,
+  Typography,
+  TableBody,
+  TableHead,
+  TableRow,
+  TableCell
+} from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles";
 import yearInfo from "../res/year-info";
 
 const styles = {
-	paper: {
-		padding: '1em 2em',
-		marginBottom: '2em',
-		display: 'flex',
-		flexDirection: 'column',
-		"@media (max-width: 1000px)": {
-			width: '75vw',
-			marginLeft: '-12.5vw'
-		},
-		"@media (max-width: 600px)": {
-			width: '95vw',
-			marginLeft: '-22.5vw'
-		}
-	},
-	paperContent: {
-		alignSelf: 'center',
-		maxWidth: '80%'
-	}
+  root: {
+    padding: "0 1rem"
+  },
+  paper: {
+    width: "50%",
+    padding: "1rem 2rem",
+    margin: "1rem auto",
+    display: "flex",
+    flexDirection: "column",
+    "@media (max-width: 1280px)": {
+      width: "75%"
+    },
+    "@media (max-width: 960px)": {
+      width: "100%"
+    }
+  },
+  img: {
+    width: "75%",
+	height: "auto",
+	margin: 'auto'
+  },
+  imgContainer: {
+	  display: 'flex',
+	  alignItems: 'center',
+	  justifyContent: 'center',
+	  margin: '1rem 0'
+  }
 };
 
-const About = () => (
-	<div className="my-tab">
-		<Paper className="paper">
-			<h2>Welcome to ACM SigApp!</h2>
-			<img alt="ACM Logo" src={require("../res/img/acm-logos/acm.gif")}/>
-			<p>We're a Special Interest Group (the Sig in SigApp) within ACM,
-				focused on Applied Computing (the App in SigApp). While this has
-				historically meant Android Apps due to the experience of our members,
-				Applied Computing is really just a buzzword that means software
-				development.</p>
-			<p>Our goal is to give students opportunities to improve Purdue
-				through software development.</p>
-		</Paper>
-		<Paper className="paper">
-			<h2>Want To Learn More?</h2>
-			<img alt="SIGApp Logo" src={require("../res/img/acm-logos/sigapp.png")}/>
-			<p>We'd love to help! Our meetings are in LWSN B160 from 7pm to 8pm
-				every Tuesday and Thursday.</p>
-			<p>In the beginning of the fall semester,
-				we typically do tutorials on different technologies, then think
-				of one or more applications to develop for the rest of the year.</p>
-			<p>Anybody who is interested is more than welcome to come to any or
-				all meetings, even if our last meeting is your first. We'd love to
-				tell you about what we do.</p>
-		</Paper>
-		<Paper className="paper">
-			<h2>What Are We Doing This Semester?</h2>
-			<p>Below you can find our rough schedule for the semester. Take a look
-				at all the fun stuff we're doing!</p>
-			<Table style={{tableLayout: 'auto'}}>
-				<TableHead>
-					<TableRow>
-						<TableCell>Date</TableCell>
-						<TableCell>Name</TableCell>
-						<TableCell style={{textAlign: 'right'}}>Link?</TableCell>
-					</TableRow>
-				</TableHead>
-				<TableBody>
-					{yearInfo.calendar.map((e, i) => (
-						<TableRow key={i}>
-							<TableCell>{e.date}</TableCell>
-							<TableCell>{e.name}</TableCell>
-							<TableCell>{e.link ? <a href={e.link}>Yes</a> : "No"}</TableCell>
-						</TableRow>
-					))}
-				</TableBody>
-			</Table>
-		</Paper>
-	</div>
+const About = ({ classes }) => (
+  <div className={classes.root}>
+    <Paper className={classes.paper}>
+      <Typography gutterBottom variant="headline" component="h2">
+        Welcome to SIGApp!
+      </Typography>
+	  <Grid container>
+		<Grid item xs={3} className={classes.imgContainer}><img className={classes.img} alt="ACM Logo" src="/img/logos/acm.png" /></Grid>
+		<Grid item xs={9} className={classes.imgContainer}><img className={classes.img} alt="SIGApp Logo" src="/img/logos/sigapp.png" /></Grid>
+	  </Grid>
+      <Typography variant="body1" gutterBottom>
+        We're a Special Interest Group (the SIG in SIGApp) within ACM, focused
+        on Applied Computing (the App in SIGApp). While this has historically
+        meant Android Apps due to the experience of our members, Applied
+        Computing is really just a buzzword that means software development.
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        Our goal is to give students opportunities to improve Purdue through
+        software development.
+      </Typography>
+    </Paper>
+    <Paper className={classes.paper}>
+      <Typography gutterBottom variant="headline" component="h2">
+        Want To Learn More?
+      </Typography>
+
+      <Typography variant="body1" gutterBottom>
+        We'd love to meet you! Our meetings are in LWSN B160 from 7pm to 8pm every
+        Tuesday and Thursday.
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        In the beginning of the fall semester, we typically do tutorials on
+        different technologies, then think of one or more applications to
+        develop for the rest of the year.
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        Anybody who is interested is more than welcome to come to any or all
+        meetings, even if our last meeting is your first. We'd love to tell you
+        about what we do.
+      </Typography>
+    </Paper>
+    <Paper className={classes.paper}>
+		<Typography gutterBottom variant="headline" component="h2">
+			What Are We Doing This Semester?
+      	</Typography>
+      <Typography variant="body1" gutterBottom>
+        Below you can find our approximate schedule for the semester. Take a look at
+        all the fun stuff we're doing! All of our tutorials and projects will always be
+		on GitHub and Google Drive if you want to look at them.
+      </Typography>
+      <Table style={{ tableLayout: "auto" }}>
+        <TableHead>
+          <TableRow>
+            <TableCell>Date</TableCell>
+            <TableCell>Name</TableCell>
+            <TableCell>Link?</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {yearInfo.calendar.map((e, i) => (
+            <TableRow key={i}>
+              <TableCell>{e.date}</TableCell>
+              <TableCell>{e.name}</TableCell>
+              <TableCell>{e.link ? <a href={e.link}>Yes</a> : "No"}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </Paper>
+  </div>
 );
 
 export default withStyles(styles)(About);

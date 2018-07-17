@@ -1,38 +1,23 @@
 import React from "react";
-import { CssBaseline, Tab, Tabs, Toolbar, AppBar, Typography, IconButton } from "@material-ui/core";
-import {Menu as MenuIcon} from "@material-ui/icons";
+import { CssBaseline, Tab, Tabs, Toolbar, AppBar, Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
+import SwipeableViews from "react-swipeable-views";
 
 import {tabs} from './res/tabs';
 
-const styles = {
-	// myTab: {
-	// 	maxWidth: '80vw',
-	// 	left: '10vw',
-	// 	position: 'relative',
-	// 	minHeight: 'calc(100vh - 112px)',
-	// 	padding: '2em 0'
-	// },
-	// tab: {
-	// 	backgroundColor: '#EEEEEE'
-	// },
-	// app: {
-	// 	height: '100%'
-	// },
-	// body: {
-	// 	margin: 0
-  // }
+const styles = theme => ({
   root: {
     flexGrow: 1,
   },
   flex: {
     flexGrow: 1,
+    textAlign: 'center',
+    color: theme.palette.secondary.main
   },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
-};
+  tab: {
+    color: theme.palette.secondary.main
+  }
+});
 
 
 class App extends React.Component {
@@ -42,9 +27,10 @@ class App extends React.Component {
   
   setActiveTab = (e, activeTab) => this.setState({activeTab});
 
+  setActiveIndex = activeTab => this.setState({activeTab});
+
 	render() {
 		const {classes} = this.props;
-    const activeTab = tabs[this.state.activeTab];
 
 		return (
 			<div className={classes.app}>
@@ -52,22 +38,25 @@ class App extends React.Component {
         <div className={classes.root}>
           <AppBar position="static">
             <Toolbar>
-              <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                <MenuIcon />
-              </IconButton>
-              <Typography variant="title" color="inherit" className={classes.flex}>
+              <Typography variant="title" className={classes.flex}>
                 Purdue ACM SIGApp
                     </Typography>
             </Toolbar>
             <Tabs fullWidth centered
                   onChange={this.setActiveTab}
                   value={this.state.activeTab}>
-              {tabs.map((tab, i) => <Tab label={tab.title} className="tab" id={i} key={i} />)}
+              {tabs.map((tab, i) => <Tab label={tab.title} className={classes.tab} id={i} key={i} />)}
             </Tabs>
           </AppBar>
         </div>
-			
-				<activeTab.component />
+        <SwipeableViews
+          // animateHeight
+          axis={'x'}
+          index={this.state.activeTab}
+          onChangeIndex={this.setActiveIndex}
+        >
+          {tabs.map((tab, i) => <tab.component key={i} />)}
+        </SwipeableViews>
 			</div>
 		);
 	}
