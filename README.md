@@ -14,7 +14,7 @@ static files are available in the folder `dist/`.
 
 # Updating the Schedule
 Each semester, an officer should create a file under the folder `year-info`.
-The file naming is currently [s|f][year].js, where s is spring, f is fall, 
+The file naming is currently `[s|f][year].js`, where s is spring, f is fall, 
 and year is the last 2 digits of the year.
 
 The file declares its export as an object with the following structure:

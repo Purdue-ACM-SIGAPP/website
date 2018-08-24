@@ -1,13 +1,13 @@
 export default {
   officers: {
-    President: [
+    "President": [
       {
         name: "Jordan Pitlor",
         picture: "/img/people/pitlor.jpg",
         link: "mailto://jpitlor@purdue.edu"
 	  }
     ],
-    "Vice President": [
+    "Late Vice President": [
       {
         name: "Lucas Shanker",
         picture: "/img/people/shanker.jpg",
