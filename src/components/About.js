@@ -32,6 +32,9 @@ const styles = {
 		alignItems: 'center',
 		justifyContent: 'center',
 		margin: '1rem 0'
+	},
+	tableContainer: {
+		overflowX: 'auto'
 	}
 };
 
@@ -87,24 +90,26 @@ const About = ({classes}) => (
 				all the fun stuff we're doing! All of our tutorials and projects will always be
 				on GitHub and Google Drive if you want to look at them.
 			</Typography>
-			<Table style={{tableLayout: "auto"}}>
-				<TableHead>
-					<TableRow>
-						<TableCell>Date</TableCell>
-						<TableCell>Name</TableCell>
-						<TableCell>Link?</TableCell>
-					</TableRow>
-				</TableHead>
-				<TableBody>
-					{yearInfo.calendar.map((e, i) => (
-						<TableRow key={i}>
-							<TableCell>{e.date}</TableCell>
-							<TableCell>{e.name}</TableCell>
-							<TableCell>{e.link ? <a href={e.link}>Yes</a> : "No"}</TableCell>
+			<div className={classes.tableContainer}>
+				<Table style={{tableLayout: "auto"}}>
+					<TableHead>
+						<TableRow>
+							<TableCell>Date</TableCell>
+							<TableCell>Name</TableCell>
+							<TableCell>Link?</TableCell>
 						</TableRow>
-					))}
-				</TableBody>
-			</Table>
+					</TableHead>
+					<TableBody>
+						{yearInfo.calendar.map((e, i) => (
+							<TableRow key={i}>
+								<TableCell>{e.date}</TableCell>
+								<TableCell>{e.name}</TableCell>
+								<TableCell>{e.link ? <a href={e.link}>Yes</a> : "No"}</TableCell>
+							</TableRow>
+						))}
+					</TableBody>
+				</Table>
+			</div>
 		</Paper>
 	</div>
 );
