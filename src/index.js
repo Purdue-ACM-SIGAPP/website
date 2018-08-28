@@ -8,7 +8,9 @@ import {
 import theme from "./res/acm-theme";
 import registerServiceWorker from './registerServiceWorker';
 
-// import './google-analytics';
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-51109974-5");
+ReactGA.pageview(window.location.pathname);
 
 ReactDOM.render(<MuiThemeProvider theme={createMuiTheme(theme)}>
 		<App />
