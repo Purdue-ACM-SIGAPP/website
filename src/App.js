@@ -50,7 +50,7 @@ class App extends React.Component {
 					</AppBar>
 				</div>
 				<SwipeableViews
-					animateHeight
+					// animateHeight
 					axis={'x'}
 					index={this.state.activeTab}
 					onChangeIndex={this.setActiveIndex}
