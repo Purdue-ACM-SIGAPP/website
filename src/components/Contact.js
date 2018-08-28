@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardContent, GridList, GridListTile, GridListTileBar, Typography} from "@material-ui/core";
+import {Card, CardContent, Grid, GridListTile, GridListTileBar, Typography} from "@material-ui/core";
 import {withStyles} from "@material-ui/core/styles";
 import yearInfo from "../res/year-info";
 import socialMedia from '../res/social-media';
@@ -10,6 +10,7 @@ const styles = {
 	},
 	card: {
 		width: "50%",
+		margin: "0 auto",
 		"&:not(:first-child)": {
 			marginTop: "1rem"
 		},
@@ -21,19 +22,14 @@ const styles = {
 		}
 	},
 	img: {
-		width: "100%",
-		height: "auto"
-	},
-	logoContainer: {
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'center',
-		width: '100%',
-		height: '100%'
+		width: "100%"
 	},
 	logo: {
 		width: '100%',
 		height: 'auto'
+	},
+	tile: {
+		height: '97%'
 	}
 };
 
@@ -44,14 +40,16 @@ const Contact = ({classes}) => (
 				<Typography gutterBottom variant="headline" component="h2">
 					Officers
 				</Typography>
-				<GridList cellHeight={'auto'} cols={2} spacing={24}>
+				<Grid container spacing={24}>
 					{Object.entries(yearInfo.officers).map(([position, officers]) => officers.map(officer => (
-						<GridListTile key={officer.name}>
-							<img className={classes.img} src={officer.picture} alt={officer.name} />
-							<GridListTileBar title={officer.name} subtitle={position} />
-						</GridListTile>
+						<Grid item xs={12} sm={6}>
+							<GridListTile key={officer.name} component='div' className={classes.tile}>
+								<img className={classes.img} src={officer.picture} alt={officer.name} />
+								<GridListTileBar title={officer.name} subtitle={position} />
+							</GridListTile>
+						</Grid>
 					)))}
-				</GridList>
+				</Grid>
 			</CardContent>
 		</Card>
 		<Card className={classes.card}>
@@ -59,19 +57,15 @@ const Contact = ({classes}) => (
 				<Typography gutterBottom variant="headline" component="h2">
 					Social Media
 				</Typography>
-				<GridList cols={4} spacing={24}>
+				<Grid container spacing={24}>
 					{socialMedia.map(tile => (
-						<GridListTile
-							key={tile.picture}
-							title={tile.name}
-							component="a"
-							href={tile.link}>
-							<div className={classes.logoContainer}>
+						<Grid item key={tile.picture} xs={6} sm={3}>
+							<a href={tile.link}>
 								<img className={classes.logo} src={tile.picture} alt={tile.name} />
-							</div>
-						</GridListTile>
+							</a>
+						</Grid>
 					))}
-				</GridList>
+				</Grid>
 			</CardContent>
 		</Card>
 	</div>

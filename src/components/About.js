@@ -5,13 +5,15 @@ import yearInfo from "../res/year-info";
 
 const styles = {
 	root: {
-		padding: "1rem"
+		padding: "1rem",
+		margin: "0 auto"
 	},
 	paper: {
 		width: "50%",
 		padding: "1rem 2rem",
 		display: "flex",
 		flexDirection: "column",
+		margin: "0 auto",
 		"&:not(:first-child)": {
 			marginTop: "1rem",
 		},
@@ -86,25 +88,26 @@ const About = ({classes}) => (
 				What Are We Doing This Semester?
 			</Typography>
 			<Typography variant="body1" gutterBottom>
-				Below you can find our approximate schedule for the semester. Take a look at
-				all the fun stuff we're doing! All of our tutorials and projects will always be
-				on GitHub and Google Drive if you want to look at them.
+				Every Tuesday will be Tutorial Tuesday, where you'll have the opportunity to learn
+				something new! Every Thursday we will work on projects. Here is an approximate schedule
+				for Tutorial Tuesdays. All of our tutorials and projects will always be on GitHub and
+				Google Drive if you want to look at them.
 			</Typography>
 			<div className={classes.tableContainer}>
-				<Table style={{tableLayout: "auto"}}>
+				<Table>
 					<TableHead>
 						<TableRow>
 							<TableCell>Date</TableCell>
-							<TableCell>Name</TableCell>
-							<TableCell>Link?</TableCell>
+							<TableCell>Title</TableCell>
+							<TableCell>Description</TableCell>
 						</TableRow>
 					</TableHead>
 					<TableBody>
 						{yearInfo.calendar.map((e, i) => (
 							<TableRow key={i}>
 								<TableCell>{e.date}</TableCell>
-								<TableCell>{e.name}</TableCell>
-								<TableCell>{e.link ? <a href={e.link}>Yes</a> : "No"}</TableCell>
+								<TableCell>{e.title}</TableCell>
+								<TableCell>{e.description}</TableCell>
 							</TableRow>
 						))}
 					</TableBody>
