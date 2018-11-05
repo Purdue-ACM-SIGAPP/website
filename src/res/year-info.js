@@ -7,13 +7,6 @@ export default {
 				link: "mailto://jpitlor@purdue.edu"
 			}
 		],
-		"Late Vice President": [
-			{
-				name: "Lucas Shanker",
-				picture: "/img/people/shanker.jpg",
-				link: "mailto://lshanke@purdue.edu"
-			}
-		],
 		"Vice President": [
 			{
 				name: "Chris Rosenblatt",
@@ -25,7 +18,14 @@ export default {
 				picture: "/img/people/kassman.jpg",
 				link: "mailto://jkassman@purdue.edu"
 			}
-		]
+		],
+        "Late Vice President": [
+            {
+                name: "Lucas Shanker",
+                picture: "/img/people/shanker.jpg",
+                link: "mailto://lshanke@purdue.edu"
+            }
+        ]
 	},
 	calendar: [
 		{
