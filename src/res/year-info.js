@@ -13,6 +13,18 @@ export default {
 				picture: "/img/people/shanker.jpg",
 				link: "mailto://lshanke@purdue.edu"
 			}
+		],
+		"Vice President": [
+			{
+				name: "Chris Rosenblatt",
+				picture: "/img/people/rosenblatt.jpg",
+				link: "mailto://rosenblc@purdue.edu"
+			},
+			{
+				name: "Josh Kassman",
+				picture: "/img/people/kassman.jpg",
+				link: "mailto://jkassman@purdue.edu"
+			}
 		]
 	},
 	calendar: [
