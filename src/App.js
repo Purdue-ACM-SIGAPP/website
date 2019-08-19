@@ -38,8 +38,8 @@ class App extends React.Component {
 				<div className={classes.root}>
 					<AppBar position="static">
 						<Toolbar>
-							<Typography variant="title" className={classes.flex}>
-								Purdue ACM SIGApp
+							<Typography variant="h5" className={classes.flex}>
+								<b>Purdue ACM SIGApp</b>
 							</Typography>
 						</Toolbar>
 						<Tabs fullWidth centered

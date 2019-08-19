@@ -40,7 +40,7 @@ const Contact = ({classes}) => (
 				<Typography gutterBottom variant="headline" component="h2">
 					Officers
 				</Typography>
-				<Grid container spacing={24}>
+				<Grid container spacing={3}>
 					{Object.entries(yearInfo.officers).map(([position, officers]) => officers.map(officer => (
 						<Grid item xs={12} sm={6}>
 							<GridListTile key={officer.name} component='div' className={classes.tile}>

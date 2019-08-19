@@ -2,9 +2,9 @@ export default {
 	officers: {
 		"President": [
 			{
-				name: "Jordan Pitlor",
-				picture: "/img/people/pitlor.jpg",
-				link: "mailto://jpitlor@purdue.edu"
+				name: "Josh Kassman",
+				picture: "/img/people/kassman.jpg",
+				link: "mailto://jkassman@purdue.edu"
 			}
 		],
 		"Vice President": [
@@ -12,11 +12,6 @@ export default {
 				name: "Chris Rosenblatt",
 				picture: "/img/people/rosenblatt.jpg",
 				link: "mailto://rosenblc@purdue.edu"
-			},
-			{
-				name: "Josh Kassman",
-				picture: "/img/people/kassman.jpg",
-				link: "mailto://jkassman@purdue.edu"
 			}
 		],
         "Late Vice President": [
@@ -29,54 +24,19 @@ export default {
 	},
 	calendar: [
 		{
-			date: "8/28/18 - 9/4/18",
-			title: "Applied DevOps",
-			description: "Server upgrades, what went wrong, and how we fixed it"
+			date: "8/20/19 - 8/22/19",
+			title: "Summer Review",
+			description: "Talk about what we all did this summer, review server changes, review safewalk progress"
 		},
 		{
-			date: "9/11/18 - 9/25/18",
-			title: "Android Kickstarter",
-			description: "Setting you up for front end success in SIGApp"
+			date: "8/26/19",
+			title: "ACM Callout",
+			description: "Join us in PHYS 114 at 6pm to learn about everything ACM does"
 		},
 		{
-			date: "10/2/18 - 10/23/18",
-			title: "Server Kickstarter",
-			description: "Setting you up for back end success in SIGApp"
-		},
-		{
-			date: "10/30/18 - 11/6/18",
-			title: "Bash/Linux",
-			description: "How to become a 1337 Hacker"
-		},
-		{
-			date: "11/13/18 - 11/27/18",
-			title: "TBD",
-			description: "VP's choice"
-		},
-		{
-			date: "1/8/19 - 1/22/19",
-			title: "Javascript Tutorial",
-			description: "How you can make applications for iOS, Android, web, Windows, macOS, AND Linux at the same time!"
-		},
-		{
-			date: "1/29/19 - 2/12/19",
-			title: "TBD",
-			description: "Member's Choice"
-		},
-		{
-			date: "2/19/19 - 3/5/19",
-			title: "TBD",
-			description: "Member's Choice"
-		},
-		{
-			date: "3/19/19 - 4/2/19",
-			title: "TBD",
-			description: "Member's Choice"
-		},
-		{
-			date: "4/9/19 - 4/23/19",
-			title: "Real World Skills",
-			description: "How to lead a club"
+			date: "8/27/19",
+			title: "SIGApp Callout",
+			description: "Join us in LWSN B160 at 7pm to learn more about what we do"
 		}
 	]
 };
