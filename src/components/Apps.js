@@ -106,7 +106,7 @@ const BigCard = (app, classes) => (
 
 const Apps = ({classes}) => (
 	<div className={classes.root}>
-		<Grid container spacing={16} justify="center">
+		<Grid container spacing={2} justify="center">
 			{apps.map((app, i) => (
 				<Grid item xs={12} md={3} key={i}>
 					{/*{XSmallCard(app, classes)}*/}
