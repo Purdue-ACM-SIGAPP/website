@@ -37,6 +37,11 @@ export default {
 			date: "8/27/19",
 			title: "SIGApp Callout",
 			description: "Join us in LWSN B160 at 7pm to learn more about what we do"
+		},
+		{
+			date: "8/29/19 - 9/5/19",
+			title: "SIGApp workflow",
+			description: "We will cover the basics of git, git flow, the atlassian products, and docker"
 		}
 	]
 };
